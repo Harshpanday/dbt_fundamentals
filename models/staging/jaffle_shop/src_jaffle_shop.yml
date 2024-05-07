@@ -2,15 +2,19 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: clone of a snowflake application database
     database: raw
     tables:
       - name: customers
+        description: raw customer data
         columns:
           - name: ID
+            description: primary key for customer data
             tests:
               - unique
               - not_null
       - name: orders
+        description: raw orders data
         columns:
           - name: ID
             tests:
